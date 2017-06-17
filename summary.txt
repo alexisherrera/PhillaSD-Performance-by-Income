@@ -1,0 +1,25 @@
+NETS 150 HW 5 Project
+author: Alexis Herrera
+
+Name of project: High School Performance in the Philadelphia School District and Median Incomes per ZIP Code
+
+Type of project: Empirical Analysis
+
+Description of project: Essentially I used median incomes of ZIP codes in Philadlephia and data indicating school
+performance to see if there were any interesting relationships between the two. I used Jsoup to retrieve data from
+a website that showed median income by ZIP code from the 2010 census. From this I used a HashMap to map
+ZIP codes to median income. After this, I used a .CSV parser (OpenCSV) to retrieve data from the
+2015-2016 School Progress Report by the School District of Philadelphia. I solely focused on retrieving data from
+high schools, as I was only interested in focusing on high school performance. After doing this,
+I created School objects where I stored fields that I found interesting such as "zipcode", "Overall School Rank", "College/Career
+Readiness Rank", "4-year Graduation Score", and etc. After doing this, I created Zipcode objects where I stored all
+of the schools that were in a particular ZIP code as well as the zipcodes' median income. After this, I began
+my data analysis where I mostly just printed out data and copy pasted it to Excel to create graphs. You can find more
+information about my results/findings in my report included with this submission!
+
+Data Used:
+2015-2016 School Progress Report by School District of Philadelphia (included in submission)
+
+2010 Census Median Income by ZIP code data retrieved from a website that made data more accessible. I used this
+because I found it easier to just retrieve this data from this website than by going deep into the official
+Census data. I used JSoup to retrieve data. This is the link: http://zipatlas.com/us/pa/philadelphia/zip-code-comparison/median-household-income.htm
